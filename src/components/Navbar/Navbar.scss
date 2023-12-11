@@ -1,0 +1,10 @@
+.container-navbar {
+
+    background-color: var(--bs-gray);
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
