@@ -9,17 +9,15 @@ export const Carrusell = () => {
 
   return (
     <div className="container-fluid animate__animated animate__rotateInDownLeft">
-  <div className="d-flex justify-content-around align-items-center mb-5">
-      <div className="divider" />
-
-      <h2 className="text-secondary text-center mx-3">
-        SEGUROS CON LOS QUE TRABAJAMOS
-      </h2>
-
-      <div className="divider" />
-    </div>
+      <div className="d-flex justify-content-around align-items-center mb-5">
+        <div className="divider" />
+        <h2 className="text-secondary text-center mx-3">
+          SEGUROS CON LOS QUE TRABAJAMOS
+        </h2>
+        <div className="divider" />
+      </div>
       <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8">
+        <div className="col-12"> 
           <Carousel
             indicators={true}
             nextIcon={
@@ -34,7 +32,7 @@ export const Carrusell = () => {
               <Carousel.Item key={idx} className="text-center">
                 <div className="row justify-content-center">
                   {group.map((seguro, index) => (
-                    <div className="col-3 col-md-3 col-lg-3" key={index}>
+                    <div className="col-12 col-md-4 col-lg-4" key={index}> 
                       <img
                         className="img-fluid p-1"
                         src={seguro.img}
