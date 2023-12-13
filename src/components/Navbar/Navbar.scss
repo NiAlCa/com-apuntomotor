@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: max-content;
   background-color: var(--bs-gray);
 }
@@ -17,21 +18,23 @@ header {
     vertical-align: baseline;
   }
 }
-a{
-  color: var(--bs-black);
-}
+
 .fs-4{
 font-size: 50px;
 }
 .py-3 {
   padding-bottom: 0rem!important;
   padding-top: 0rem!important;
+}
 
-  .nav-right {
-    width: 37rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
+.nav {
+  width: 37rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  a{
+    color: var(--bs-white);
   }
 }
