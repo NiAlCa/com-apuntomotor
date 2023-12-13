@@ -4,7 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
 import logo1 from '../../assets/logo1.png';
-import './Main.scss'; // Continúa usando tus estilos personalizados aquí
+import './Main.scss';
+
 
 export const Main = () => {
   return (
