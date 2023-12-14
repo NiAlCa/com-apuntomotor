@@ -1,0 +1,19 @@
+
+.container-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: flex-start;
+}
