@@ -1,0 +1,63 @@
+.review-container {
+    position: relative;
+  }
+  
+
+  
+  .ocultador {
+    position: absolute;
+    top: 800px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white; 
+    z-index: 100000000000000;
+  }
+
+
+  
+   
+    
+
+  @media only screen and (max-width: 1024px) {
+    .ocultador {
+        position: absolute;
+        top: 785px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white; 
+        z-index: 100000000000000;
+      }
+  }
+  
+ 
+  @media only screen and (max-width: 425px) {
+    .ocultador {
+        position: absolute;
+        top: 825px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white; 
+        z-index: 100000000000000;
+      }
+  }
+  
+
+  
+
+  
+
+@media only screen and (max-width: 391px) {
+      
+    .ocultador {
+      position: absolute;
+      top: 840px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: white; 
+      z-index: 100000000000000;
+    }
+    }
