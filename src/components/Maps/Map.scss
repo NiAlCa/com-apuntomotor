@@ -1,19 +1,23 @@
-
-.container-contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.container-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 844px) {
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    h2{
-        display: flex;
-        justify-content: center;
+    justify-content: center;
+    .mapa {
+      width: 100%;
+      height: 200;
     }
+  }
 }
 
-.contacto{
-    display: flex;
-    flex-direction: row;
-    gap: 14px;
-    align-items: flex-start;
+.contacto {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
 }
