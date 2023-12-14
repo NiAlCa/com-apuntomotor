@@ -4,11 +4,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
 import logo1 from '../../assets/logo1.png';
-import './Main.scss';
+import './Main.scss'; // Asegúrese de que este archivo contenga sus estilos personalizados
+import { Navbar } from "../Navbar/Navbar";
 
 
 export const Main = () => {
   return (
+    <>
+    <Navbar/>
     <div className="main-container">
       <Container>
         <Row className="justify-content-center align-items-end logo-row mb-5">
@@ -31,5 +34,6 @@ export const Main = () => {
         </Row>
       </Container>
     </div>
+    </>
   );
 };
