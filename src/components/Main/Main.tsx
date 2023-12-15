@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import logo1 from "../../assets/logo1.png";
 import "./Main.scss";
 import Map from "../Maps/Map";
+import { Form } from "../Form/Form";
 
 
 export const Main = () => {
@@ -48,6 +49,7 @@ export const Main = () => {
         <Col>
           <Map />
         </Col>
+        <Form/>
       </Container>
     </div>
   );
