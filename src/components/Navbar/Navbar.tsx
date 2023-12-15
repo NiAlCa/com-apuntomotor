@@ -4,7 +4,7 @@ import "../../styles/variables.scss";
 
 export const Navbar = () => {
   return (
-    <header className="d-flex flex-wrap justify-content-space-center py-3 border-bottom">
+    <header className="d-flex flex-wrap justify-content-space-center border-bottom">
       <div className="nav-left">
         <a
           href="/"
