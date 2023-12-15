@@ -4,6 +4,9 @@ export type footerDataItem = {
     telefono: string;
     movil: string;
     title2: string;
+    title3: string;
+    title4: string;
+    title5: string;
 };
 
 
@@ -27,6 +30,11 @@ export const footerData = [
     },
     {
         title: "TALLER MECANICO CHIVA",
-        title2: "TALLER DE COCHE CHIVA",
+        title2: "TALLER DE COCHES CHIVA",
+        title3: "TALLER CHIVA",
+        title4: "AUTOSERVICIO CHIVA",
+        title5: "TALLER AUTOMOTRIZ CHIVA",
+
+        
     },
 ]

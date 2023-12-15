@@ -1,5 +1,6 @@
 import { footerData } from "../../data/footerData.mock";
 
+
 const horario = footerData.find(item => item.title === 'HORARIO') || { title: '', text: '' };
 const direccion = footerData.find(item => item.title === 'DONDE ESTAMOS') || { title: '', text: '' };
 const contacto = footerData.find(item => item.title === 'CONTACTO CON NOSOTROS') || { title: '', text: '', telefono: '', movil: '' };
@@ -26,7 +27,11 @@ const Footer = () => {
           </div>
           <div className="col-md">
           <h5 className="bg-danger text-white">{taller.title}</h5>
+      
           <h5 className="bg-danger text-white">{taller.title2}</h5>
+          <h5 className="bg-danger text-white">{taller.title3}</h5>
+          <h5 className="bg-danger text-white">{taller.title4}</h5>
+          <h5 className="bg-danger text-white">{taller.title5}</h5>
           </div>
         </div>
       </div>
