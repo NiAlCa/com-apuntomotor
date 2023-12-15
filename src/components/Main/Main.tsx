@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 import logo1 from "../../assets/logo1.png";
 import "./Main.scss";
 import Map from "../Maps/Map";
-import "./Main.scss";
+
 
 export const Main = () => {
   return (
