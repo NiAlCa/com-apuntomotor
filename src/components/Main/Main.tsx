@@ -1,11 +1,11 @@
-import { Button } from "react-bootstrap";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import logo1 from "../../assets/logo1.png";
 import "./Main.scss";
-import Map from "../Maps/Map";
+
 
 
 
@@ -30,25 +30,23 @@ export const Main = () => {
         </Row>
         <Row className="justify-content-around align-items-end button-row">
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
-            <Button
-              variant="primary"
-              className="w-100 animate__animated animate__fadeInLeft"
+            <button  
+               type="button"
+              className="w-100 animate__animated animate__fadeInLeft btn btn-primary"
             >
               CONTACTO
-            </Button>
+            </button>
           </Col>
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
-            <Button
-              variant="primary"
-              className="w-100 animate__animated animate__fadeInRight"
+            <button
+                 type="button"
+              className="w-100 animate__animated animate__fadeInRight btn btn-primary"
             >
               SERVICIOS
-            </Button>
+            </button>
           </Col>
         </Row>
-        <Col>
-          <Map />
-        </Col>
+     
      
       </Container>
     </div>
