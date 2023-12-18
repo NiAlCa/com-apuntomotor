@@ -19,19 +19,19 @@ const Services = () => {
 
           {/* Izquierda */}
           <div className={`col d-flex flex-column align-items-center   ${styles.column}`}>
-            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[1].img} alt={servicesData[1].title} />
               <h3>{servicesData[1].title}</h3>
               <p>{servicesData[1].txt}</p>
             </div>
-            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[3].img} alt={servicesData[3].title} />
               <h3>{servicesData[3].title}</h3>
               <p>{servicesData[3].txt}</p>
             </div>
-            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItemc}`}></div>
           </div>
 
           {/* CENTRO */}
@@ -61,13 +61,13 @@ const Services = () => {
               <h3>{servicesData[0].title}</h3>
               <p>{servicesData[0].txt}</p>
             </div>
-            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[2].img} alt={servicesData[2].title} />
               <h3>{servicesData[2].title}</h3>
               <p>{servicesData[2].txt}</p>
             </div>
-            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[4].img} alt={servicesData[4].title} />
               <h3>{servicesData[4].title}</h3>

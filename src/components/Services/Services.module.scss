@@ -47,3 +47,14 @@
     text-align: center;
     align-items: center;
   }
+  @media (max-width: 767px) {
+    .lineaRoja {
+      display: none;/* Estilos para pantallas pequeñas */
+      left: 0; /* Ajusta la posición a la izquierda */
+    }
+     .gridItemc {
+        display: none;
+        margin-right: 10px; /* Agrega un margen derecho entre los íconos y las cards */
+      }
+    
+    }
