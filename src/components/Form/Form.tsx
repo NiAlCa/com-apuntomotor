@@ -2,9 +2,14 @@ import './Form.scss';
 
 export const Form = () => {
   return (
-    <div className="col-md-8 templatemo_contactform">
-      <div className="templatemo_contacttitle">
-        <h2>FORMULARIO DE CONTACTO</h2>
+    <div className='d-flex justify-content-center mt-4'>
+    <div className="col-md-6 templatemo_contactform  w-75 ">
+    <div className="d-flex justify-content-around align-items-center mb-5">
+        <div className="divider" />
+        <h2 className="text-secondary text-center mx-3">
+          FORMULARIO DE CONTACTO
+        </h2>
+        <div className="divider" />
       </div>
       <form action="enviar.php" method="post">
         <div className='div-inputs d-flex'>
@@ -52,6 +57,7 @@ export const Form = () => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

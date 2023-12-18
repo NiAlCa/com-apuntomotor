@@ -1,6 +1,6 @@
 import React, { Suspense, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { Loader, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import {Car} from "../../assets/3d/Car"
 import { Vector3 } from 'three';
 
@@ -24,13 +24,16 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
 
 
 
+
+
+
   return (
   
     <div style={{ width: '100%', height: '40vh', overflow:"visible" }}>
 
 
 { icono === "neumatico" &&
-  
+  <>
   <Canvas>
   <PerspectiveCamera makeDefault ref={cameraRef} position={[150, 0, 0]} />
   <ambientLight intensity={5} />
@@ -48,11 +51,16 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
   </Suspense>
   <OrbitControls />
 </Canvas>
+<Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
 }
 
 
 { icono === "aire" &&
-  
+<>
 <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[0, 0, 3]} />
         <ambientLight intensity={5} />
@@ -69,12 +77,17 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         </Suspense>
         <OrbitControls />
       </Canvas>
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
 }
 
 
 { icono === "mecanica" &&
 
-
+<>
 <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[350, 50, 0]} />
         <ambientLight intensity={5} />
@@ -91,11 +104,17 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         </Suspense>
         <OrbitControls />
       </Canvas>
+
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
   
 }
 
 { icono === "luces" &&
-  
+  <>
   <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[1, 1, 0]} />
         <ambientLight intensity={5} />
@@ -109,11 +128,17 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           </RotatingModel>
         </Suspense>
         <OrbitControls />
-      </Canvas>}
+      </Canvas>
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+      }
 
  { icono === "llave" &&
   
-  
+  <>
   <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[0, 1, 1]} />
         <ambientLight intensity={5} />
@@ -124,11 +149,21 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           </RotatingModel>
         </Suspense>
         <OrbitControls />
-      </Canvas>}
+      </Canvas>
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+      
+      }
    
 
 
 { icono === "matricula" &&
+
+
+<>
 <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[20, 1, 1]} />
         <ambientLight intensity={5} />
@@ -139,7 +174,14 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           </RotatingModel>
         </Suspense>
         <OrbitControls />
-      </Canvas>}
+      </Canvas>
+      
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+      }
 
 
 
@@ -150,7 +192,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
 
 
 { icono === "visitanos" && 
-
+<>
 <Canvas>
       <PerspectiveCamera makeDefault ref={cameraRef} position={[250, 50, 0]} />
       <ambientLight intensity={5} />
@@ -162,10 +204,20 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         </RotatingModel>
       </Suspense>
       <OrbitControls />
-    </Canvas>}
+    </Canvas>
+    <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+    
+    }
 
 
    { icono === "electronica" && 
+
+
+<>
    <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[1, 1, 1]} />
         <ambientLight intensity={5} />
@@ -176,10 +228,17 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           </RotatingModel>
         </Suspense>
         <OrbitControls />
-      </Canvas>}
+      </Canvas>
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+      
+      }
 
 { icono === "itv" &&
-
+<>
 <Canvas>
         <PerspectiveCamera makeDefault ref={cameraRef} position={[2, 1, 2]} />
         <ambientLight intensity={5} />
@@ -190,7 +249,14 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           </RotatingModel>
         </Suspense>
         <OrbitControls />
-      </Canvas>}
+      </Canvas>
+      <Loader
+ dataInterpolation={(p) => `Loading ${p.toFixed(2)}%`}
+/>
+
+</>
+      
+      }
 
 
 
