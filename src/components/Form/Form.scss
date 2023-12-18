@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.templatemo_contacttitle {
+    width: 100%;
+    font-weight: bold;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.templatemo_contact {
+    margin: 30px;
+    width: 100%;
+    margin-left: 15%;
+}
+
+.templatemo_contactform input, textarea {
+    width: 100%;
+    background: #282828;
+    border: 1px solid #393939;
+    padding: 7px 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #FAFAFA;
+}
+
+.templatemo_contactform textarea {
+    height: 100px;
+}
+
+
+.templatemo_contactform .btn-primary {
+    background: $secondary;
+    border: none;
+    border-radius: 0px;
+    color: var(--bs-white);
+
+}
+
+.templatemo_contactform .btn-primary:hover {
+    background: $primary;
+    color: var(--bs-white);
+}
