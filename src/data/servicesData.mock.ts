@@ -22,19 +22,19 @@ export const servicesData: ServicesData = [
     },
     {
         img: "/src/assets/services/instrumentos-150x150.png",
-        title: "CAMBIO DE NEUMATICOS",
+        title: "DIANOSTICO MULTIMARCA",
         txt:"Contamos con terminal de diagnosis multimarca. Nuestros equipos de autodiagnosis nos permiten realizar reparaciones relacionadas con la inyección del motor, inyección diésel, airbag, abs, reset, climatizador...",
         position:"der"
     },
     {
         img: "/src/assets/services/rueda-150x150.png",
-        title: "Asesoramiento gratuito",
+        title: "CAMBIO DE NEUMATICOS",
         txt:"Ofrecemos solución para todos los problemas en neumáticos de turismos y vehículos comerciales como; cambio de ruedas, amortiguadores, pinchazos, direcciones, alineaciones, pastillas y discos, bombas de freno, zapatas y bombines, sustitución de liquidos... ",
         position: "izq"
     },
     {
         img: "/src/assets/services/aire-acondicionado-150x150.png",
-        title: "Asesoramiento gratuito",
+        title: "CARGA DE AIRE ACONDICIONADO",
         txt:"Somos especialistas en reparación, mantenimiento y carga de aire acondicionado. Consigue un mayor confort y seguridad en tu vehículo permitiendo la eliminación de vaho en el parabrisas y consiguiendo la temperatura optima en el vehiculo. ",
         position:"der"
     },
