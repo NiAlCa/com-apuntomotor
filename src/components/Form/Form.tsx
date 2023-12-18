@@ -7,6 +7,7 @@ export const Form = () => {
         <h2>FORMULARIO DE CONTACTO</h2>
       </div>
       <form action="enviar.php" method="post">
+        <div className='div-inputs d-flex'>
         <input
           type="text"
           name="name"
@@ -14,6 +15,15 @@ export const Form = () => {
           className="name"
           placeholder="NOMBRE"
         />
+         <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          className="apellido"
+          placeholder="APELLIDO"
+        />
+        </div>
+        <div className='div-inputs d-flex'>
         <input
           type="text"
           name="mail"
@@ -28,6 +38,7 @@ export const Form = () => {
           className="subject"
           placeholder="TELÉFONO"
         />
+        </div>
         <textarea
           name="message"
           className="message"
@@ -35,7 +46,7 @@ export const Form = () => {
           id="message"
         />
         <div className="clear"></div>
-        <div className="col-md-8">
+        <div className="d-flex justify-content-center">
           <button type="submit" className="btn btn-primary">
             ENVIAR{" "}
           </button>
