@@ -4,6 +4,9 @@ import { Form } from "../../components/Form/Form";
 import { Main } from "../../components/Main/Main";
 import Map from "../../components/Maps/Map";
 import Review from "../../components/Review/Review";
+import Services from "../../components/Services/Services";
+
+
 
 
 export const HomePage = () => {
@@ -11,6 +14,7 @@ export const HomePage = () => {
     <div className="page">
       <Main />
       <Carrusell />
+      <Services />
       <Cards />
       <Review />
       <Map />
