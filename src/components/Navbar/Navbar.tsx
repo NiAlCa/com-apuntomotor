@@ -1,6 +1,7 @@
 import punto from "../../assets/Logo2.png";
 import "./Navbar.scss";
 import "../../styles/variables.scss";
+import Menu from "../Menu/Menu";
 
 export const Navbar = () => {
   return (
@@ -14,23 +15,7 @@ export const Navbar = () => {
         </a>
       </div>
 
-      <ul className="nav nav-pills col-4">
-        <li className="nav-item">
-          <a href="#" className="nav-link" aria-current="page">
-            INICIO
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            SERVICIOS
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link">
-            CONTACTO
-          </a>
-        </li>
-      </ul>
+      <Menu/>
     </header>
   );
 };

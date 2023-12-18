@@ -5,7 +5,7 @@ import {
 } from "../../data/serviciosPageData.mock";
 import Modelo3d from "../../components/ServiciosDescription/Modelo3d";
 import Menu from "../../components/Menu/Menu";
-
+import logo from "../../assets/Logo2.png"
 
 
 export const ServiciosDetalle = () => {
@@ -19,6 +19,7 @@ export const ServiciosDetalle = () => {
   }
 
   return (
+    <div className="page">
     <div className="row justify-content-center ">
       <div className="col-8">
         <Modelo3d icono={`${serviceData.icono}`} />
@@ -36,9 +37,18 @@ export const ServiciosDetalle = () => {
         </div>
       </div>
 
-      <div className="col-4 bg-primary">
-        <Menu/>
+      <div className="col-4">
+      <a
+          href="/"
+          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img src={logo}  width="250" />
+        </a>
+        <Menu
+        column={true}
+        />
       </div>
+    </div>
     </div>
   );
 };

@@ -3,9 +3,11 @@ import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstr
 import './Menu.scss'
 import { ServiciosMenu } from './ServiciosMenu';
 
-interface MenuProps {}
+interface MenuProps {
+  column?: boolean
+}
 
-const Menu: React.FC<MenuProps> = () => {
+const Menu: React.FC<MenuProps> = ({column}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -13,27 +15,18 @@ const Menu: React.FC<MenuProps> = () => {
   };
 
   return (
-    <Navbar className='navbar' expand="md">
+    <Navbar className='navbar d-flex' expand="md" >
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto" navbar>
-          <NavItem>
+      <Nav className={`mr-auto ${column ? 'flex-column align-items-center' : ''}`} navbar>
+          <NavItem className=' d-flex align-items-center'>
             <NavLink href="#">INICIO</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink href="#"><ServiciosMenu/></NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">BLOG</NavLink>
-          </NavItem>
-          <NavItem>
+          <NavItem className=' d-flex align-items-center' >
             <NavLink href="#">CONTACTO</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink href="#">NO LO SE</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">NO LO SE</NavLink>
+          <NavItem className=' d-flex align-items-start  '>
+            <NavLink   href="#"><ServiciosMenu/></NavLink>
           </NavItem>
         </Nav>
       </Collapse>
