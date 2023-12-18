@@ -1,0 +1,14 @@
+.nav-link{
+    color: white;
+}
+.dropdown {
+    color: white;
+    background-color: transparent;
+    border: none;
+    a{
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: none;
+    }
+}
