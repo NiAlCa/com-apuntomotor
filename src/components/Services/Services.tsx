@@ -1,10 +1,11 @@
 import { FaCar } from "react-icons/fa";
 import { servicesData } from '../../data/servicesData.mock';
 import styles from './Services.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Services = () => {
 
-  
+
   return (
     <>
       <div className={`d-flex justify-content-around align-items-center mb-5 ${styles.divider}`}>
@@ -35,21 +36,21 @@ const Services = () => {
           </div>
 
           {/* CENTRO */}
-          <div className={`col d-flex flex-column align-items-center  justify-content-center  ${styles.column}`}>
+          <div className={`col d-flex flex-column align-items-center  justify-content-center  ${styles.columnc}`}>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={40} className="bg-danger rounded-pill p-1" />
+              <FaCar size={60} className="bg-danger rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+              <FaCar size={60} className="bg-danger rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+              <FaCar size={60} className="bg-danger rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+              <FaCar size={60} className="bg-danger rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+              <FaCar size={60} className="bg-danger rounded-pill p-3" />
             </div>
             <div className={styles.lineaRoja}></div>
           </div>
@@ -75,6 +76,10 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={`cboton ${styles.cboton}`} >
+        <button className={`boton ${styles.boton}`}>DESCUBRE TODOS NUESTROS SERVICIOS</button>
+        
       </div>
     </>
   );
