@@ -1,69 +1,81 @@
+import { FaCar } from "react-icons/fa";
 import { servicesData } from '../../data/servicesData.mock';
-import './Services.scss';
+import styles from './Services.module.scss';
 
 const Services = () => {
-  const izqCards = servicesData.filter((item) => item.position === 'izq');
-  const derCards = servicesData.filter((item) => item.position === 'der');
 
+  
   return (
     <>
-      <div className="d-flex justify-content-around align-items-center mb-5">
-        <div className="divider" />
-        <h2 className="text-secondary text-center mx-3">
+      <div className={`d-flex justify-content-around align-items-center mb-5 ${styles.divider}`}>
+        <div className={styles.divider} />
+        <h2 className={`text-secondary text-center mx-3 ${styles.text}`}>
           NUESTROS SERVICIOS
         </h2>
-        <div className="divider" />
+        <div className={styles.divider} />
       </div>
-      <div className="container mx-auto text-center">
-        <div className="row">
-          {/* Cards a la izquierda */}
-          <div className="col mb-4 d-flex flex-column align-items-center">
-            {izqCards.map((item, idx) => (
-              <div key={idx} className="mb-4">
-                <div className="card h-100">
-                  <img
-                    className="card-img-top img-fluid rounded"
-                    src={item.img}
-                    alt={item.title}
-                    style={{ width: '150px', height: '150px', alignSelf: 'center'  }}
-                  />
-                  <div className="card-body d-flex flex-column align-items-center">
-                    <h5 className="card-title text-secondary">{item.title}</h5>
-                    <p className="card-text flex-grow-1">{item.txt}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className={`container mt-4 ${styles.container}`}>
+        <div className={`row ${styles.row}`}>
 
-          {/* Línea roja que divide */}
-          <div className="col-md-1 d-none d-md-block ">
-            <div className="linea">
-            <div className="line-with-icons"></div>
+          {/* Izquierda */}
+          <div className={`col d-flex flex-column align-items-center   ${styles.column}`}>
+            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItem}`}>
+              <img src={servicesData[1].img} alt={servicesData[1].title} />
+              <h3>{servicesData[1].title}</h3>
+              <p>{servicesData[1].txt}</p>
             </div>
+            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItem}`}>
+              <img src={servicesData[3].img} alt={servicesData[3].title} />
+              <h3>{servicesData[3].title}</h3>
+              <p>{servicesData[3].txt}</p>
+            </div>
+            <div className={`grid-item ${styles.gridItem}`}></div>
           </div>
 
-          {/* Cards a la derecha */}
-          <div className="col mb-4 d-flex flex-column align-items-center">
-            {derCards.map((item, idx) => (
-              <div key={idx} className="mb-4">
-                <div className="card h-100">
-                  <img
-                    className="card-img-top img-fluid rounded"
-                    src={item.img}
-                    alt={item.title}
-                    style={{ width: '150px', height: '150px', alignSelf: 'center' }}
-                  />
-                  <div className="card-body d-flex flex-column align-items-center">
-                    <h5 className="card-title text-secondary">{item.title}</h5>
-                    <p className="card-text flex-grow-1">{item.txt}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* CENTRO */}
+          <div className={`col d-flex flex-column align-items-center  justify-content-center  ${styles.column}`}>
+            <div className={`grid-item-c ${styles.gridItemc}`}>
+              <FaCar size={40} className="bg-danger rounded-pill p-1" />
+            </div>
+            <div className={`grid-item-c ${styles.gridItemc}`}>
+              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+            </div>
+            <div className={`grid-item-c ${styles.gridItemc}`}>
+              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+            </div>
+            <div className={`grid-item-c ${styles.gridItemc}`}>
+              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+            </div>
+            <div className={`grid-item-c ${styles.gridItemc}`}>
+              <FaCar size={40} className="bg-danger rounded-pill p-1"/>
+            </div>
+            <div className={styles.lineaRoja}></div>
+          </div>
+
+          {/* Derecha */}
+          <div className={`col  d-flex flex-column align-items-center   ${styles.column}`}>
+            <div className={`grid-item ${styles.gridItem}`}>
+              <img src={servicesData[0].img} alt={servicesData[0].title} />
+              <h3>{servicesData[0].title}</h3>
+              <p>{servicesData[0].txt}</p>
+            </div>
+            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItem}`}>
+              <img src={servicesData[2].img} alt={servicesData[2].title} />
+              <h3>{servicesData[2].title}</h3>
+              <p>{servicesData[2].txt}</p>
+            </div>
+            <div className={`grid-item ${styles.gridItem}`}></div>
+            <div className={`grid-item ${styles.gridItem}`}>
+              <img src={servicesData[4].img} alt={servicesData[4].title} />
+              <h3>{servicesData[4].title}</h3>
+              <p>{servicesData[4].txt}</p>
             </div>
           </div>
         </div>
+      </div>
     </>
   );
 };

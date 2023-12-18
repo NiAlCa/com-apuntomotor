@@ -1,0 +1,49 @@
+
+  
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridItem{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px; 
+    height: 400px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gridItemc{
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    
+  }
+  .lineaRoja {
+    position: absolute;
+    width: 8px;
+    height: 80%;
+    background-color: red;
+    z-index: 1; 
+    text-align: center;
+    align-items: center;
+  }
