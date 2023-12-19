@@ -57,7 +57,7 @@ export const Form = () => {
 
           <button type="submit" className="btn btn-primary">
           {t('servi.formsend')}{" "}
-
+          </button>
           <button type="submit" className="boton mb-5">
             ENVIAR{" "}
 

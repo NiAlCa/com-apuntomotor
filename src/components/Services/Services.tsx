@@ -8,11 +8,11 @@ const Services = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <>
-
+    
+      <>
     <I18nextProvider i18n={i18n}>
       <div className={`d-flex justify-content-around align-items-center mb-5 ${styles.divider}`}>
-
+      </div>
       <div className={`d-flex justify-content-around align-items-center mt-5  ${styles.divider}`}>
 
         <div className={styles.divider} />
