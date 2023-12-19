@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   Dropdown,
   DropdownItem,
   DropdownToggle,
   DropdownMenu,
 } from "reactstrap";
-import './Menu.scss'
+import "./Menu.scss";
 
 interface ServiciosMenuProps {}
 
@@ -20,6 +20,10 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
     setDropdown(false);
   };
 
+  const navigateTo = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
     <Dropdown
       isOpen={dropdown}
@@ -27,31 +31,33 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
       onMouseOver={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <DropdownToggle caret className="dropdown">SERVICIOS</DropdownToggle>
+      <DropdownToggle caret className="dropdown">
+        SERVICIOS
+      </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
-          <a href="">Neumáticos Y Sistema De Frenado</a>
+        <DropdownItem onClick={() => navigateTo("/neumaticos")}>
+          Neumáticos Y Sistema De Frenado
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Aire Acondicionado</a>
+        <DropdownItem onClick={() => navigateTo("/aire")}>
+          Aire Acondicionado
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Mecánica General</a>
+        <DropdownItem onClick={() => navigateTo("/mecanica")}>
+          Mecánica General
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Análisis De Luces</a>
+        <DropdownItem onClick={() => navigateTo("/luces")}>
+          Análisis De Luces
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Llaves De Coche</a>
+        <DropdownItem onClick={() => navigateTo("/llaves")}>
+          Llaves De Coche
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Matrículas</a>
+        <DropdownItem onClick={() => navigateTo("/matriculas")}>
+          Matrículas
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Electrónica</a>
+        <DropdownItem onClick={() => navigateTo("/electronica")}>
+          Electrónica
         </DropdownItem>
-        <DropdownItem>
-          <a href="">Pre ITV</a>
+        <DropdownItem onClick={() => navigateTo("/itv")}>
+          Pre ITV
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
