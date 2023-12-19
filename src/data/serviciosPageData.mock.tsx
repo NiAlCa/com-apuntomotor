@@ -191,12 +191,6 @@ export const serviciosPageData = [
 
 ]
 
-          </>
-        ),
-        slash: "itv",
-    },
-    
-]
 
 
 

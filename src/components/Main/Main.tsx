@@ -29,7 +29,7 @@ export const Main = () => {
 
             <h1 className="text-style text-primary font-weight-bold animate__animated animate__fadeInDown">
               {t('main.title')}
-
+            </h1>
             <h1 className="text-style text-primary display-1 font-weight-bold animate__animated animate__fadeInDown">
               TALLER MECÁNICO <br/> CHIVA
 
