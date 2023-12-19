@@ -27,12 +27,8 @@ export const Main = () => {
         <Row className="justify-content-center align-items-end logo-row mb-5">
           <Col md="auto" className="text-center">
 
-            <h1 className="text-style text-primary font-weight-bold animate__animated animate__fadeInDown">
-              {t('main.title')}
-            </h1>
             <h1 className="text-style text-primary display-1 font-weight-bold animate__animated animate__fadeInDown">
-              TALLER MECÁNICO <br/> CHIVA
-
+              {t('main.title')}
             </h1>
           </Col>
         </Row>

@@ -21,7 +21,7 @@ export const ServiciosDetalle = () => {
   const titleToShow = i18n.language === 'en' ? serviceData.titleEn : serviceData.titleEs;
 
   return (
-    <div className="page">
+
       <div className="row justify-content-center">
         <div className="col-8">
           <Modelo3d icono={`${serviceData.icono}`} />
@@ -36,19 +36,7 @@ export const ServiciosDetalle = () => {
             </button>
           </div>
         </div>
-
-        <div className="col-4">
-          <a
-            href="/"
-            className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <img src={logo} width="250" alt="Logo" />
-          </a>
-          <Menu column={true} />
-        </div>
-      </div>
-
-      <div className="col-4 menuServicios">
+        <div className="col-4 menuServicios">
         <a
           href="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -57,6 +45,9 @@ export const ServiciosDetalle = () => {
         </a>
         <Menu column={true} />
       </div>
+
+
+     
     </div>
   );
 };
