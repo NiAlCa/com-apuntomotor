@@ -1,15 +1,17 @@
 
 import { serviciosCardsData } from '../../data/serviciosCardsData.mock';
 import style from './Cards.module.scss';
-
+import { useTranslation } from 'react-i18next';
 export const Cards = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={` animate__animated animate__rotateInUpRight ${style.container}`}>
       <div className="row justify-content-center">
       <div className="d-flex justify-content-around align-items-center mb-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
-          OTROS SERVICIOS
+        {t('servi.card')}
         </h2>
         <div className="divider" />
       </div>
@@ -22,9 +24,9 @@ export const Cards = () => {
        
               <img className="card-img-top img-fluid w-100" src={item.img} alt={item.title} />
               <div className="card-body d-flex flex-column align-items-center">
-                <h5 className="card-title text-secondary">{item.title}</h5>
+                <h5 className="card-title text-secondary">{t(`serviciosCardData.${item.title}.title`)}</h5>
     
-                <p className="card-text flex-grow-1">{item.txt}</p>
+                <p className="card-text flex-grow-1">{t(`serviciosCardData.${item.title}.txt`)}</p>
               </div>
             </div>
           </div>

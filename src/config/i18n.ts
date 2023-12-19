@@ -19,6 +19,33 @@ const resources: Resource = {
       serviceNotFound: 'Service not found',
       inicio: 'Home',
       contacto: 'Contact',
+
+
+
+
+
+
+      serviciosCardData: {
+        'Alarga la vida del motor': {
+          title: 'Extends engine life',
+          txt: 'At Chiva mechanical workshop, we are dedicated to prolonging the life of your engine. We offer services from oil changes to comprehensive inspections, all to ensure optimal performance and durability of your engine. Choose experience and expert care for your vehicle!',
+        },
+        'Paga en 6 meses sin intereses': {
+          title: 'Pay in 6 months without interest',
+          txt: 'At Chiva workshop, we understand the importance of economy in the maintenance of your vehicle. Therefore, we offer you the option of paying for our services in 6 months without interest. Take care of your car without worrying about the immediate impact on your pocket.',
+        },
+        'Amortiguadores 4x3': {
+          title: '4x3 shock absorbers',
+          txt: 'Take advantage of our promotion at Chiva mechanical workshop: buy four shock absorbers and pay only three. Significantly improve the suspension of your vehicle with the best quality products, ensuring a comfortable and safe trip. Dont miss this exclusive offer!',
+        },
+        'Asesoramiento gratuito': {
+          title: 'Free advice',
+          txt: 'Do you have questions about the care of your car? At Chiva workshop, we offer you free advice from our experts. Receive personalized recommendations and practical solutions to keep your vehicle in optimal conditions. Come and discover how we can be of help to you and your car.',
+        },
+      },
+
+
+
       servicesData: {
         'PRE ITV': {
           title: 'PRE ITV',
@@ -37,24 +64,43 @@ const resources: Resource = {
           txt: 'We offer solutions for all problems with tires for cars and commercial vehicles, including tire changes, shock absorbers, punctures, steering, alignments, pads and discs, brake pumps, shoes and cylinders, and fluid replacement.',
         },
         'CARGA DE AIRE ACONDICIONADO': {
-          title: 'AIR CONDITIONING REFILL',
+          title: 'AIR-CONDITIONING REFILL',
           txt: 'We are specialists in the repair, maintenance, and charging of air conditioning. Achieve greater comfort and safety in your vehicle by eliminating mist on the windshield and achieving optimal temperature in the vehicle.',
         },
       },
+
+
+
+
+
       carrusell: { title: 'INSURANCES WE WORK WITH' },
+
       servi: {
         top: 'OUR SERVICES',
-        bottom: 'DISCOVER ALL OUR SERVICES'
+        bottom: 'DISCOVER ALL OUR SERVICES',
+        card: 'OTHER SERVICES',
+        resena: 'REVIEWS FROM OUR CUSTOMERS',
+        visit: 'VISIT UT',
+        formulario: 'CONTACT FORM',
+        formsend: 'SEND'
       },
+
+
       main: {
         title: 'MECHANICAL WORKSHOP CHIVA',
         button1: 'CONTACT US',
         button2: 'SERVICES',
       },
+
+
       horario: {
         title: 'OPENING HOURS',
         text: 'Opening hours: 09:00 AM to 02:00 PM and 04:00 PM to 07:30 PM.',
       },
+
+
+
+
       footer: {
         horario: {
           title: 'HORARIO',
@@ -81,6 +127,7 @@ const resources: Resource = {
       },
     },
   },
+
   es: {
     translation: {
       services: 'SERVICIOS',
@@ -97,6 +144,34 @@ const resources: Resource = {
       inicio: 'Inicio',
       contacto: 'Contacto',
       carrusell: { title: 'SEGUROS CON LOS QUE TRABAJAMOS' },
+
+
+
+
+
+
+      serviciosCardData: {
+        'Alarga la vida del motor': {
+          title: 'Alarga la vida del motor',
+          txt: 'En taller mecánico Chiva, nos dedicamos a prolongar la vida de tu motor. Ofrecemos servicios desde cambios de aceite hasta revisiones exhaustivas, todo para asegurar el rendimiento óptimo y la durabilidad de tu motor. ¡Elige la experiencia y el cuidado experto para tu vehículo!',
+        },
+        'Paga en 6 meses sin intereses': {
+          title: 'Paga en 6 meses sin intereses',
+          txt: 'En taller Chiva, entendemos la importancia de la economía en el mantenimiento de tu vehículo. Por eso, te ofrecemos la opción de pagar nuestros servicios en 6 meses sin intereses. Cuida tu coche sin preocuparte por el impacto inmediato en tu bolsillo.',
+        },
+        'Amortiguadores 4x3': {
+          title: 'Amortiguadores 4x3',
+          txt: 'Aprovecha nuestra promoción en taller mecánico Chiva: compra cuatro amortiguadores y paga solo tres. Mejora significativamente la suspensión de tu vehículo con productos de la mejor calidad, asegurando un viaje confortable y seguro. ¡No te pierdas esta oferta exclusiva!',
+        },
+        'Asesoramiento gratuito': {
+          title: 'Asesoramiento gratuito',
+          txt: '¿Dudas sobre el cuidado de tu coche? En taller Chiva, te ofrecemos asesoramiento gratuito por parte de nuestros expertos. Recibe recomendaciones personalizadas y soluciones prácticas para mantener tu vehículo en condiciones óptimas. Ven y descubre cómo podemos ser de ayuda para ti y tu coche.',
+        },
+      },
+
+
+
+
       servicesData: {
         'PRE ITV': {
           title: 'PRE MOV',
@@ -119,19 +194,43 @@ const resources: Resource = {
           txt: 'Somos especialistas en reparación, mantenimiento y carga de aire acondicionado. Consigue un mayor confort y seguridad en tu vehículo permitiendo la eliminación de vaho en el parabrisas y consiguiendo la temperatura óptima en el vehículo.',
         },
       },
+
+
+
+
+
+
+
+
       servi: {
         top: 'NUESTROS SERVICIOS',
-        bottom: 'DESCUBRE TODOS NUESTROS SERVICIOS'
+        bottom: 'DESCUBRE TODOS NUESTROS SERVICIOS',
+        card: 'OTROS SERVICIOS',
+        resena: 'REVIEWS FROM OUR CUSTOMERS',
+        visit: 'VISITANOS',
+        formulario: 'FORMULARIO DE CONTACTO',
+        formsend: 'ENVIAR'
       },
+
+
+
+
       main: {
         title: 'TALLER MECÁNICO CHIVA',
         button1: 'CONTACTO',
         button2: 'SERVICIOS',
+
+
       },
       horario: {
         title: 'HORARIO',
         text: 'Horarios de Atención: 09:00h. a 14:00h. y 16:00h. a 19:30h.',
       },
+
+
+
+
+
       footer: {
         horario: {
           title: 'HORARIO',

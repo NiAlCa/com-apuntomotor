@@ -80,7 +80,7 @@ const Services = () => {
         </div>
       </div>
       <div className={`cboton ${styles.cboton}`} >
-        <button className={`boton ${styles.boton}`}>DESCUBRE TODOS NUESTROS SERVICIOS</button>
+        <button className={`boton ${styles.boton}`}>{t('servi.bottom')}</button>
 
       </div>
       </I18nextProvider>
