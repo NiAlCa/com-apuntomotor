@@ -19,13 +19,14 @@ export const ServiciosDetalle = () => {
   }
 
   const textToShow = i18n.language === 'en' ? serviceData.textEn : serviceData.textEs;
+  const titleToShow = i18n.language === 'en' ? serviceData.titleEn : serviceData.titleEs;
 
   return (
     <div className="page">
       <div className="row justify-content-center ">
         <div className="col-8">
           <Modelo3d icono={`${serviceData.icono}`} />
-          <h1 className="text-center text-color-primary text-secondary">{t(serviceData.title)}</h1>
+          <h1 className="text-center text-color-primary text-secondary">{titleToShow}</h1>
           <div>{textToShow}</div>
           <div className="d-flex justify-content-center">
             <button

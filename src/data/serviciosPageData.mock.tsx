@@ -1,7 +1,8 @@
 
 
 export type serviciosPageDataItem = {
-  title: string;
+  titleEs: string;
+  titleEn: string;
   textEn: JSX.Element;
   textEs: JSX.Element;
   slash: string;
@@ -15,7 +16,8 @@ export type serviciosPageData = serviciosPageDataItem[];
 
 export const serviciosPageData = [
   {
-    title: "NEUMATICOS Y SISTEMA DE FRENADO",
+    titleEs: "NEUMATICOS Y SISTEMA DE FRENADO",
+    titleEn: "TIRES AND BRAKING SYSTEM",
     icono: "neumatico",
     textEs: (
       <>
@@ -32,7 +34,8 @@ export const serviciosPageData = [
     slash: "neumaticos",
   },
   {
-    title: "AIRE ACONDICIONADO",
+    titleEs: "AIRE ACONDICIONADO",
+    titleEn: "AIR-CONDITIONING",
     icono: "aire",
     textEs: (
       <>
@@ -53,7 +56,8 @@ export const serviciosPageData = [
     slash: "aire",
   },
   {
-    title: "MECANICA GENERAL",
+    titleEs: "MECANICA GENERAL",
+    titleEn: "GENERAL MECHANICS",
     icono: "mecanica",
     textEs: (
       <>
@@ -72,7 +76,8 @@ export const serviciosPageData = [
     slash: "mecanica",
   },
   {
-    title: "ANALISIS DE LUCES",
+    titleEs: "ANALISIS DE LUCES",
+    titleEn: "LIGHT ANALYSIS",
     icono: "luces",
     textEs: (
       <>
@@ -91,7 +96,8 @@ export const serviciosPageData = [
     slash: "luces",
   },
   {
-    title: "HAZ COPIA DE TU LLAVE DE COCHE",
+    titleEs: "HAZ COPIA DE TU LLAVE DE COCHE",
+    titleEn: "MAKE A COPY OF YOUR CAR KEY",
     icono: "llave",
     textEs: (
       <>
@@ -108,7 +114,8 @@ export const serviciosPageData = [
     slash: "llaves",
   },
   {
-    title: "MATRÍCULAS",
+    titleEs: "MATRÍCULAS",
+    titleEn: "LICENSE PLATES",
     icono: "matricula",
     textEs: (
       <>
@@ -125,7 +132,8 @@ export const serviciosPageData = [
     slash: "matriculas",
   },
   {
-    title: "ELECTRONICA",
+    titleEs: "ELECTRÓNICA",
+    titleEn: "ELECTRONICS",
     icono: "electronica",
     textEs: (
       <>
@@ -144,7 +152,8 @@ export const serviciosPageData = [
     slash: "electronica",
   },
   {
-    title: "PRE-ITV",
+    titleEs: "PRE-ITV",
+    titleEn: "PRE-MOT",
     icono: "itv",
     textEs: (
       <>

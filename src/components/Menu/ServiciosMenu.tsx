@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownToggle,
-  DropdownMenu,
-} from "reactstrap";
+import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from "reactstrap";
+import { useTranslation } from "react-i18next"; 
 import "./Menu.scss";
 
 interface ServiciosMenuProps {}
 
 export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
   const [dropdown, setDropdown] = useState(false);
-
+  const { t } = useTranslation(); 
   const onMouseEnter = () => {
     setDropdown(true);
   };
@@ -32,32 +28,32 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
       onMouseLeave={onMouseLeave}
     >
       <DropdownToggle caret className="dropdown">
-        SERVICIOS
+        {t("services")} 
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem onClick={() => navigateTo("/neumaticos")}>
-          Neumáticos Y Sistema De Frenado
+          {t("tires")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/aire")}>
-          Aire Acondicionado
+          {t("airConditioning")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/mecanica")}>
-          Mecánica General
+          {t("mechanics")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/luces")}>
-          Análisis De Luces
+          {t("lightsAnalysis")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/llaves")}>
-          Llaves De Coche
+          {t("keyDuplication")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/matriculas")}>
-          Matrículas
+          {t("plates")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/electronica")}>
-          Electrónica
+          {t("electronics")}
         </DropdownItem>
         <DropdownItem onClick={() => navigateTo("/itv")}>
-          Pre ITV
+          {t("preITV")}
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>

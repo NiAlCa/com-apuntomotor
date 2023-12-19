@@ -23,10 +23,10 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className={`mr-auto ${column ? 'flex-column align-items-center' : ''}`} navbar>
           <NavItem className=' d-flex align-items-center'>
-            <NavLink href="/">{t('Inicio')}</NavLink>
+            <NavLink href="/">{t('inicio')}</NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-center' >
-            <NavLink href="#">{t('Contacto')}</NavLink>
+            <NavLink href="#">{t('contacto')}</NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-start'>
             <NavLink href="#"><ServiciosMenu/></NavLink>
