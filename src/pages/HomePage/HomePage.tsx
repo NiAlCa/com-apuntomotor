@@ -34,7 +34,6 @@ export const HomePage = () => {
 
       <ContenedorPage bg="bg-light">    <Cards /> </ContenedorPage>
     <ContenedorPage  bi={image2}
-       bgFilter={true}
     > <Review /></ContenedorPage>
         
         <ContenedorPage bg="bg-light">

@@ -19,7 +19,7 @@ export const ServiciosDetalle = () => {
   }
 
   return (
-    <div className="page">
+    <div className="serviciosDetalle">
     <div className="row justify-content-center ">
       <div className="col-8">
         <Modelo3d icono={`${serviceData.icono}`} />
@@ -37,7 +37,7 @@ export const ServiciosDetalle = () => {
         </div>
       </div>
 
-      <div className="col-4">
+      <div className="col-4 menuServicios">
       <a
           href="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
