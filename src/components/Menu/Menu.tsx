@@ -31,7 +31,7 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
           <NavItem className=' d-flex align-items-start'>
             <NavLink href="#"><ServiciosMenu/></NavLink>
           </NavItem>
-          <NavItem className=' d-flex align-items-start'>
+          <NavItem className=' d-flex align-items-center'>
             <LanguageSwitcher /> 
           </NavItem>
         </Nav>
