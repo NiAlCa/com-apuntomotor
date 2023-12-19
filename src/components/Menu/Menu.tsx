@@ -1,13 +1,16 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
-import './Menu.scss'
+import { useTranslation } from 'react-i18next'; 
+import './Menu.scss';
 import { ServiciosMenu } from './ServiciosMenu';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 interface MenuProps {
-  column?: boolean
+  column?: boolean;
 }
 
-const Menu: React.FC<MenuProps> = ({column}) => {
+const Menu: React.FC<MenuProps> = ({ column }) => {
+  const { t } = useTranslation(); 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -18,15 +21,18 @@ const Menu: React.FC<MenuProps> = ({column}) => {
     <Navbar className='navbar d-flex' expand="md" >
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-      <Nav className={`mr-auto ${column ? 'flex-column align-items-center' : ''}`} navbar>
+        <Nav className={`mr-auto ${column ? 'flex-column align-items-center' : ''}`} navbar>
           <NavItem className=' d-flex align-items-center'>
-            <NavLink href="#">INICIO</NavLink>
+            <NavLink href="/">{t('Inicio')}</NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-center' >
-            <NavLink href="#">CONTACTO</NavLink>
+            <NavLink href="#">{t('Contacto')}</NavLink>
           </NavItem>
-          <NavItem className=' d-flex align-items-start  '>
-            <NavLink   href="#"><ServiciosMenu/></NavLink>
+          <NavItem className=' d-flex align-items-start'>
+            <NavLink href="#"><ServiciosMenu/></NavLink>
+          </NavItem>
+          <NavItem className=' d-flex align-items-start'>
+            <LanguageSwitcher /> 
           </NavItem>
         </Nav>
       </Collapse>
