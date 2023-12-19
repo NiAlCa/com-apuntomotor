@@ -6,7 +6,7 @@ export const Cards = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={` animate__animated animate__rotateInUpRight ${style.container}`}>
+    <div className={` mb-5 ${style.container}`}>
       <div className="row justify-content-center">
       <div className="d-flex justify-content-around align-items-center mb-5">
         <div className="divider" />

@@ -9,8 +9,12 @@ const Services = () => {
 
   return (
     <>
+
     <I18nextProvider i18n={i18n}>
       <div className={`d-flex justify-content-around align-items-center mb-5 ${styles.divider}`}>
+
+      <div className={`d-flex justify-content-around align-items-center mt-5  ${styles.divider}`}>
+
         <div className={styles.divider} />
         <h2 className={`text-secondary text-center mx-3 ${styles.text}`}>
           {t('servi.top')}
@@ -18,7 +22,7 @@ const Services = () => {
         <div className={styles.divider} />
       </div>
       <div className={`container mt-4 ${styles.container}`}>
-        <div className={`row ${styles.row}`}>
+        <div className={`row ${styles.row} text-white`}>
 
           {/* Izquierda */}
           <div className={`col d-flex flex-column align-items-center   ${styles.column}`}>
@@ -40,19 +44,19 @@ const Services = () => {
           {/* CENTRO */}
           <div className={`col d-flex flex-column align-items-center  justify-content-center  ${styles.columnc}`}>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={60} className="bg-danger rounded-pill p-3" />
+              <FaCar size={60} className="bg-secondary rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={60} className="bg-danger rounded-pill p-3" />
+              <FaCar size={60} className="bg-secondary rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={60} className="bg-danger rounded-pill p-3" />
+              <FaCar size={60} className="bg-secondary rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={60} className="bg-danger rounded-pill p-3" />
+              <FaCar size={60} className="bg-secondary rounded-pill p-3" />
             </div>
             <div className={`grid-item-c ${styles.gridItemc}`}>
-              <FaCar size={60} className="bg-danger rounded-pill p-3" />
+              <FaCar size={60} className="bg-secondary rounded-pill p-3" />
             </div>
             <div className={styles.lineaRoja}></div>
           </div>
@@ -79,11 +83,14 @@ const Services = () => {
           </div>
         </div>
       </div>
+
       <div className={`cboton ${styles.cboton}`} >
         <button className={`boton ${styles.boton}`}>{t('servi.bottom')}</button>
 
       </div>
       </I18nextProvider>
+
+
     </>
   );
 };

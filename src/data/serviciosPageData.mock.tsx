@@ -168,6 +168,7 @@ export const serviciosPageData = [
           <li>La señalización y alumbrado</li>
           <li>El sistema de dirección</li>
         </ul>
+
       </>
     ),
     textEn: (
@@ -189,3 +190,13 @@ export const serviciosPageData = [
   },
 
 ]
+
+          </>
+        ),
+        slash: "itv",
+    },
+    
+]
+
+
+

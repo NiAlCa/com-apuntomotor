@@ -17,9 +17,9 @@ const Review = () => {
   }, []);
 
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column " >
 
-               <div className="d-flex justify-content-around align-items-center mb-5">
+               <div className="d-flex justify-content-around align-items-center mb-5 mt-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
         {t('servi.resena')}
@@ -30,7 +30,7 @@ const Review = () => {
     <div className="review-container">
  
       <div className="elfsight-app-b9cda379-5dba-40e4-b39a-32ce90f7bc2d"></div>
-      <div className="ocultador"></div>
+      <div className="ocultador bg-light "></div>
     </div>
     </div>
   );

@@ -10,7 +10,7 @@ export const Carrusell = () => {
   }
 
   return (
-    <div className="container-fluid animate__animated animate__rotateInDownLeft">
+    <div className="container-fluid mt-5 mb-5 ">
       <div className="d-flex justify-content-around align-items-center mb-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
