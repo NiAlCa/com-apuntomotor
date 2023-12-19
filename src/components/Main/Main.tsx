@@ -11,7 +11,7 @@ import "./Main.scss";
 
 export const Main = () => {
   return (
-    <div className="main-container">
+    <div className="main-container d-flex flex-column justify-content-center align-items-center" style={{height: "90vh"}}>
       <Container>
         <Row className="justify-content-center align-items-end logo-row mb-5">
           <Col md="auto" className="text-center">
@@ -32,7 +32,7 @@ export const Main = () => {
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
             <button  
                type="button"
-              className="w-100 animate__animated animate__fadeInLeft btn btn-primary"
+              className="w-100 animate__animated boton animate__fadeInLeft btn btn-primary"
             >
               CONTACTO
             </button>
@@ -40,7 +40,7 @@ export const Main = () => {
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
             <button
                  type="button"
-              className="w-100 animate__animated animate__fadeInRight btn btn-primary"
+              className="w-100 animate__animated animate__fadeInRight boton btn-primary"
             >
               SERVICIOS
             </button>

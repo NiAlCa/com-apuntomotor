@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: max-content;
-  background-color: var(--bs-gray);
+
   @media (max-width: 767px) {
     flex-direction: column;
     .nav-left.col-8{
@@ -25,7 +25,6 @@ header {
 }
 .nav-left {
   display: flex;
-  background-color: var(--bs-gray-500);
   height: 80px;
   padding: 0rem 0rem 0rem 3rem;
   align-items: center;
@@ -44,7 +43,5 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  a {
-    color: var(--bs-white);
-  }
+ 
 }
