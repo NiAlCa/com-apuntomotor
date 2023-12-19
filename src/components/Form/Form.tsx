@@ -52,7 +52,7 @@ export const Form = () => {
         />
         <div className="clear"></div>
         <div className="d-flex justify-content-center">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="boton mb-5">
             ENVIAR{" "}
           </button>
         </div>
