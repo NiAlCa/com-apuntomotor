@@ -1,7 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import { segurosData } from "../../data/segurosData.mock";
+import { useTranslation } from 'react-i18next';
 
 export const Carrusell = () => {
+  const { t } = useTranslation();
   const groupedData = [];
   for (let i = 0; i < segurosData.length; i += 3) {
     groupedData.push(segurosData.slice(i, i + 3));
@@ -12,7 +14,7 @@ export const Carrusell = () => {
       <div className="d-flex justify-content-around align-items-center mb-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
-          SEGUROS CON LOS QUE TRABAJAMOS
+        {t('carrusell.title')}
         </h2>
         <div className="divider" />
       </div>
