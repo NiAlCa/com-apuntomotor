@@ -1,0 +1,36 @@
+.boton-esp{
+    width: 250x;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: border 3ms;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    &:hover{
+        border: 2px solid gray
+    }
+}
+
+.boton-eng{
+    width: 250x;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: border 3ms;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    
+
+    &:hover{
+        border: 2px solid gray
+    }
+}

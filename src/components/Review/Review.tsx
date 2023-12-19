@@ -1,7 +1,9 @@
 import { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import './Review.scss';
 
 const Review = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://static.elfsight.com/platform/platform.js";
@@ -20,7 +22,7 @@ const Review = () => {
                <div className="d-flex justify-content-around align-items-center mb-5 mt-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
-          LAS RESEÑAS DE NUESTROS CLIENTES
+        {t('servi.resena')}
         </h2>
         <div className="divider" />
      

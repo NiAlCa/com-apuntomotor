@@ -2,13 +2,15 @@ import home from '../../assets/contacto/home.svg';
 import mail from '../../assets/contacto/mail.svg';
 import phone from '../../assets/contacto/phone.svg'
 import './Map.scss'
+import { useTranslation } from 'react-i18next';
 
 
 const Map = () => {
+  const { t } = useTranslation();
   return (
     <div className='container-contacto'>
       <div>
-        <h1 className='text-secondary text-center'>VISITANOS</h1>
+        <h1 className='text-secondary text-center'>{t('servi.visit')}</h1>
         <div className='contacto'>
             <img src={home} alt="home" />
             <p>C/ SAN JUAN BAUTISTA, 46170, CHIVA</p>

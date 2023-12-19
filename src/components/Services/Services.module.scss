@@ -63,7 +63,7 @@
     align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1288px) {
     .lineaRoja {
         display: none;
         left: 0;
@@ -75,6 +75,28 @@
     }
 
 }
+@media screen and (min-width: 1201px) {
+    .grid-item{
+      flex-basis: 100%; 
+    }
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .grid-item{
+      flex-basis: 100%; 
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .col {
+      text-align: center;
+    }
+  
+    .grid-item {
+      max-width: 80%; 
+      margin: 0 auto; 
+    }
+  }
 
 .cboton {
     display: flex;

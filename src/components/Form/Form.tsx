@@ -1,13 +1,15 @@
 import './Form.scss';
+import { useTranslation } from 'react-i18next';
 
 export const Form = () => {
+  const { t } = useTranslation();
   return (
     <div className='d-flex justify-content-center mt-4'>
     <div className="col-md-6 templatemo_contactform  w-75 ">
     <div className="d-flex justify-content-around align-items-center mb-5">
         <div className="divider" />
         <h2 className="text-secondary text-center mx-3">
-          FORMULARIO DE CONTACTO
+        {t('servi.formulario')}
         </h2>
         <div className="divider" />
       </div>
@@ -52,8 +54,13 @@ export const Form = () => {
         />
         <div className="clear"></div>
         <div className="d-flex justify-content-center">
+
+          <button type="submit" className="btn btn-primary">
+          {t('servi.formsend')}{" "}
+
           <button type="submit" className="boton mb-5">
             ENVIAR{" "}
+
           </button>
         </div>
       </form>
