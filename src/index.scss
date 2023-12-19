@@ -27,7 +27,7 @@ flex-direction: column;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: aqua;
+    background-attachment: fixed;
     
   }
 
@@ -64,7 +64,7 @@ flex-direction: column;
     position: absolute;
     height: 90vh;
     width: 100vw;
-    background-color: #0000006d;
+    background-color: #000000fe;
     opacity: 0.8;
     overflow: 'hidden',
   }

@@ -8,7 +8,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import Review from "../../components/Review/Review";
 import Services from "../../components/Services/Services";
 import image from "../../assets/imagenes/1.jpg"
-import image2 from "../../assets/imagenes/7.jpg"
+import image2 from "../../assets/imagenes/4.jpg"
 import { ContenedorPage } from "../../components/Contenedor/Contenedor";
 
 export const HomePage = () => {

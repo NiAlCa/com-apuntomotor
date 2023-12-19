@@ -13,7 +13,7 @@ export const Main = () => {
   return (
     <div className="main-container d-flex flex-column justify-content-center align-items-center" style={{height: "90vh"}}>
       <Container>
-        <Row className="justify-content-center align-items-end logo-row mb-5">
+        <Row className="justify-content-center  align-items-end logo-row mb-5">
           <Col md="auto" className="text-center">
             <Image
               src={logo1}
@@ -23,8 +23,8 @@ export const Main = () => {
         </Row>
         <Row className="justify-content-center align-items-end logo-row mb-5">
           <Col md="auto" className="text-center">
-            <h1 className="text-style text-primary font-weight-bold animate__animated animate__fadeInDown">
-              TALLER MECÁNICO CHIVA
+            <h1 className="text-style text-primary display-1 font-weight-bold animate__animated animate__fadeInDown">
+              TALLER MECÁNICO <br/> CHIVA
             </h1>
           </Col>
         </Row>
