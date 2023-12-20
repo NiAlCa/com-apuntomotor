@@ -28,13 +28,12 @@ const Form: React.FC<FormProps> = () => {
               />
             </div>
             <div>
-              <label htmlFor="apellido">Apellido<span className="required"></span>:</label>
+              <label htmlFor="apellido">Apellido:</label>
               <input
                 type="text"
                 name="apellido"
                 id="apellido"
-                className="apellido required"
-                required
+                className="apellido"
               />
             </div>
           </div>
