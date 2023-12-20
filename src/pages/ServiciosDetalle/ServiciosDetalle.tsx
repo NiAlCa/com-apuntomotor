@@ -22,8 +22,8 @@ export const ServiciosDetalle = () => {
 
   return (
 
-      <div className="row justify-content-center">
-        <div className="col-8">
+      <div className="row justify-content-center flex-md-row flex-column-reverse ">
+        <div className="col-md-8 col-12 px-5" >
           <Modelo3d icono={`${serviceData.icono}`} />
           <h1 className="text-center text-color-primary text-secondary">{titleToShow}</h1>
           <div>{textToShow}</div>
@@ -36,12 +36,12 @@ export const ServiciosDetalle = () => {
             </button>
           </div>
         </div>
-        <div className="col-4 menuServicios">
+        <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 ">
         <a
           href="/"
-          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none "
         >
-          <img src={logo} width="250" alt="Logo" />
+          <img src={logo}  alt="Logo Apuntomotor"  style={{ maxWidth: '200px',}}/>
         </a>
         <Menu column={true} />
       </div>
