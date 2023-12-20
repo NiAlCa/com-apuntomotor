@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from "reactstrap";
-import { useTranslation } from "react-i18next"; 
+import { useTranslation } from "react-i18next";
 import "./Menu.scss";
 
 interface ServiciosMenuProps {}
 
 export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
   const [dropdown, setDropdown] = useState(false);
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const onMouseEnter = () => {
     setDropdown(true);
   };
@@ -28,7 +28,7 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
       onMouseLeave={onMouseLeave}
     >
       <DropdownToggle caret className="dropdown">
-        {t("services")} 
+        {t("services")}
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem onClick={() => navigateTo("/neumaticos")}>

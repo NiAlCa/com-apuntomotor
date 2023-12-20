@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 import './Menu.scss';
 import { ServiciosMenu } from './ServiciosMenu';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
@@ -10,7 +10,7 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ column }) => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -26,13 +26,13 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
             <NavLink href="/">{t('inicio')}</NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-center' >
-            <NavLink href="#">{t('contacto')}</NavLink>
+            <NavLink href="/contacto">{t('contacto')}</NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-start'>
             <NavLink href="#"><ServiciosMenu/></NavLink>
           </NavItem>
           <NavItem className=' d-flex align-items-center'>
-            <LanguageSwitcher /> 
+            <LanguageSwitcher />
           </NavItem>
         </Nav>
       </Collapse>
