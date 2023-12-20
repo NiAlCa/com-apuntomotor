@@ -1,7 +1,9 @@
 import './Form.scss';
 import { useTranslation } from 'react-i18next';
 
-export const Form = () => {
+interface FormProps {}
+
+const Form: React.FC<FormProps> = () => {
   const { t } = useTranslation();
   return (
     <div className='d-flex justify-content-center mt-4'>
@@ -68,3 +70,5 @@ export const Form = () => {
     </div>
   );
 };
+
+export default Form;
