@@ -1,14 +1,7 @@
-.nav-link{
-    color: white;
-}
-.dropdown {
-    color: white;
-    background-color: transparent;
-    border: none;
-    a{
-        text-decoration: none;
-    }
+
+.btn-secondary.dropdown-toggle {
+    color: grey;
     &:hover{
-        background-color: none;
+        color: black;
     }
 }

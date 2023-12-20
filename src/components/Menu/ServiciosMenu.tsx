@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from "reactstrap";
 import { useTranslation } from "react-i18next";
-import "./Menu.scss";
+import './Menu.scss';
 
 interface ServiciosMenuProps {}
 
@@ -27,7 +27,7 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
       onMouseOver={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <DropdownToggle caret className="dropdown">
+      <DropdownToggle caret className='dropdown-toggle bg-transparent border-0'>
         {t("services")}
       </DropdownToggle>
       <DropdownMenu>
