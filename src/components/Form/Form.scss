@@ -1,5 +1,12 @@
 @import "../../styles/variables.scss";
 
+.required::before {
+  content: '*';
+  color: red; /* Puedes ajustar el color según tu preferencia */
+  margin-right: 4px; /* Ajusta el espacio entre el asterisco y el texto */
+}
+
+
 .templatemo_contacttitle {
   width: 100%;
   font-weight: bold;
@@ -25,12 +32,20 @@ textarea {
   background-color: #fafafa;
   border-radius: 8px;
 }
+
 .templatemo_contactform textarea {
   height: 100px;
 }
 .div-inputs {
-  gap: 3px;
+  gap: 20px;
+  > div {
+    width: 100%;
+  }
 }
+#subject {
+  width: 45%;
+}
+
 .templatemo_contactform .btn-primary {
   width: 100px;
   background: $primary;
