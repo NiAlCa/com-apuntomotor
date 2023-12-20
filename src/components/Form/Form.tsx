@@ -38,13 +38,12 @@ const Form: React.FC<FormProps> = () => {
               />
             </div>
           </div>
-          <label htmlFor="mail">Email<span className="required"></span>:</label>
+          <label htmlFor="mail">Email:</label>
           <input
             type="email"
             name="mail"
             id="mail"
-            className="email required"
-            required
+            className="email"
           />
           <div className="d-flex flex-column phone">
             <label htmlFor="phone">Teléfono<span className="required"></span>:</label>
