@@ -38,12 +38,14 @@ export const Main = () => {
             </Link>
           </Col>
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
+          <Link to="/servicios">
             <button
               type="button"
               className="w-100 animate__animated animate__fadeInRight boton btn-primary"
             >
               {t('main.button2')}
             </button>
+            </Link>
           </Col>
         </Row>
       </Container>
