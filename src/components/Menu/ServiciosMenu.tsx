@@ -15,9 +15,9 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
   };
 
   return (
-    <div className={`dropdown ${dropdown ? 'show' : ''}`} onMouseOver={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
+    <div className={`dropdown mr-sm-5  ${dropdown ? 'show' : ''}`} onMouseOver={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
       <button
-        className="btn btn-transparent dropdown-toggle border-0"
+        className="btn btn-transparent dropdown-toggle p-0 border-0"
         type="button"
         id="dropdownMenuButton"
         data-bs-toggle="dropdown"
