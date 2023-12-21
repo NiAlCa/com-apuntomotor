@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from "reactstrap";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Menu.scss';
 
 interface ServiciosMenuProps {}
@@ -8,54 +7,34 @@ interface ServiciosMenuProps {}
 export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
   const [dropdown, setDropdown] = useState(false);
   const { t } = useTranslation();
-  const onMouseEnter = () => {
-    setDropdown(true);
-  };
 
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
+
 
   const navigateTo = (url: string) => {
     window.location.href = url;
   };
 
   return (
-    <Dropdown
-      isOpen={dropdown}
-      toggle={()=>{}}
-      onMouseOver={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
-      <DropdownToggle caret className='dropdown-toggle bg-transparent border-0'>
-        {t("services")}
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem onClick={() => navigateTo("/neumaticos")}>
-          {t("tires")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/aire")}>
-          {t("airConditioning")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/mecanica")}>
-          {t("mechanics")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/luces")}>
-          {t("lightsAnalysis")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/llaves")}>
-          {t("keyDuplication")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/matriculas")}>
-          {t("plates")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/electronica")}>
-          {t("electronics")}
-        </DropdownItem>
-        <DropdownItem onClick={() => navigateTo("/itv")}>
-          {t("preITV")}
-        </DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+    <div className={`dropdown ${dropdown ? 'show' : ''}`} onMouseOver={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
+      <button
+        className="btn btn-transparent dropdown-toggle border-0"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded={dropdown ? 'true' : 'false'}
+      >
+        {t('services')}
+      </button>
+      <ul className={`dropdown-menu ${dropdown ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
+        <li><a className="dropdown-item" onClick={() => navigateTo('/neumaticos')}>{t('tires')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/aire')}>{t('airConditioning')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/mecanica')}>{t('mechanics')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/luces')}>{t('lightsAnalysis')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/llaves')}>{t('keyDuplication')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/matriculas')}>{t('plates')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/electronica')}>{t('electronics')}</a></li>
+        <li><a className="dropdown-item" onClick={() => navigateTo('/itv')}>{t('preITV')}</a></li>
+      </ul>
+    </div>
   );
 };
