@@ -1,6 +1,6 @@
 import Form from "../../components/Form/Form";
 import Map from "../../components/Maps/Map";
-import logo from "../../assets/Logo2.png";
+import logo from "../../assets/Logo2.webp";
 import Menu from "../../components/Menu/Menu";
 
 export const Contacto = () => {

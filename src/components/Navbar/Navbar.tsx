@@ -1,4 +1,4 @@
-import punto from "../../assets/Logo2.png";
+import punto from "../../assets/Logo2.webp";
 import "./Navbar.scss";
 import "../../styles/variables.scss";
 import Menu from "../Menu/Menu";

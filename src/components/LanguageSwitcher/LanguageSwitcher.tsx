@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
         onClick={() => changeLanguage('es')}
       >
         <div className="flag-container">
-          <img src='/src/assets/idioma/Espanol.png' alt="" />
+          <img src='/src/assets/idioma/Espanol.webp' alt="" />
         </div>
         <span className="language-code">ES</span>
       </button>
@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
         onClick={() => changeLanguage('en')}
       >
         <div className="flag-container">
-          <img src='/src/assets/idioma/English.png' alt="" />
+          <img src='/src/assets/idioma/English.webp' alt="" />
         </div>
         <span className="language-code">EN</span>
       </button>

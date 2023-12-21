@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { serviciosPageData, serviciosPageDataItem } from '../../data/serviciosPageData.mock';
 import Modelo3d from '../../components/ServiciosDescription/Modelo3d';
 import Menu from '../../components/Menu/Menu';
-import logo from '../../assets/Logo2.png';
+import logo from '../../assets/Logo2.webp';
 
 export const ServiciosDetalle = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
