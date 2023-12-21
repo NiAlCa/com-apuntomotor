@@ -1,7 +1,8 @@
 
-.btn-secondary.dropdown-toggle {
+.btn.btn-transparent.dropdown-toggle {
     color: var(--bs-nav-link-color);
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    padding-left: 0;
     &:hover{
        color: var(--bs-nav-link-hover-color);
     }
