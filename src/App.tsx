@@ -9,6 +9,7 @@ import { ServiciosDetalle } from "./pages/ServiciosDetalle/ServiciosDetalle";
 import { I18nextProvider } from 'react-i18next';
 import i18n from './config/i18n';
 import { Contacto } from "./pages/Contacto/Contacto";
+import { Servicios } from "./pages/Servicios/Servicios";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
             <Route path="dev" element={<Dev />} />
             <Route path="/:serviceSlug" element={<ServiciosDetalle />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/servicios" element={<Servicios/>} />
           </Routes>
+
           <Footer />
         </div>
       </I18nextProvider>

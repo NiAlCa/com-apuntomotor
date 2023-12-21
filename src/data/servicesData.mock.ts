@@ -9,7 +9,7 @@ export type ServicesData = ServicesDataItem[];
 
 export const servicesData: ServicesData = [
     {
-        img: "/src/assets/services/coche-150x150.png",
+        img: "/src/assets/services/coche-150x150.webp",
         title: "PRE ITV",
         txt:"¿Tiene cita con la ITV o esta a punto de caducar? En A Punto Motor nos encargamos de que su coche pase sin problemas la inspección técnica de vehículos, con nuestro servicio de PRE-ITV inspeccionamos a fondo su vehiculo para evitar los contratiempos ",
         position: "der"
