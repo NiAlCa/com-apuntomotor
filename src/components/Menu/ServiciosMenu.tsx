@@ -23,7 +23,7 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
   return (
     <Dropdown
       isOpen={dropdown}
-      toggle={() => {}}
+      toggle={()=>{}}
       onMouseOver={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
