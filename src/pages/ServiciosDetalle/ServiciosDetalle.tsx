@@ -36,7 +36,7 @@ export const ServiciosDetalle = () => {
             </button>
           </div>
         </div>
-        <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 ">
+        <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 animate__animated animate__zoomInRight">
         <a
           href="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none "

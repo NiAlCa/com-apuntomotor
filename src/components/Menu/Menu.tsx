@@ -21,7 +21,7 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
     <Navbar className='navbar d-flex' expand="md" >
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className={`mr-auto ${column ? 'flex-column align-items-center' : ''}`} navbar>
+        <Nav className={`mr-auto ${column ? 'flex-column align-items-center'  : ''}`} navbar>
           <NavItem className=' d-flex align-items-center'>
             <NavLink href="/">{t('inicio')}</NavLink>
           </NavItem>

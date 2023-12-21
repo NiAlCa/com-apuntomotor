@@ -6,13 +6,15 @@ import { Vector3 } from 'three';
 
 import RotatingModel from './RotatingModel'; 
 import { Rueda } from '../../assets/3d/Rueda';
-import { Ventilador } from '../../assets/3d/Ventilador';
-import { Mecanica } from '../../assets/3d/Mecanica';
+
+
 import { Luces } from '../../assets/3d/Luces';
 import { Carkey } from '../../assets/3d/Carkey';
 import { CarPlate } from '../../assets/3d/CarPlate';
 import { Carbatery } from '../../assets/3d/Carbatery';
 import { Itv } from '../../assets/3d/Itv';
+import { Toolbox } from '../../assets/3d/Toolbox';
+import { Aire } from '../../assets/3d/Aire';
 
 
 type Modelo3dProps = {
@@ -62,7 +64,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
 { icono === "aire" &&
 <>
 <Canvas>
-        <PerspectiveCamera makeDefault ref={cameraRef} position={[0, 0, 3]} />
+        <PerspectiveCamera makeDefault ref={cameraRef} position={[30, 2, 10]} />
         <ambientLight intensity={5} />
         <Suspense fallback={null}>
           <pointLight position={[35, 35, 0]} intensity={0.4}/>
@@ -70,9 +72,9 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           <RotatingModel
           rotationSpeed={0.005}   // Velocidad de rotación
           rotationAxis="y"        // Eje de rotación
-          rotationPoint={new Vector3(0, -0.75, 1.25)} // Punto de rotación
+          rotationPoint={new Vector3(0, 0, 0)} // Punto de rotación
           >
-            <Ventilador />
+            <Aire />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -89,7 +91,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
 
 <>
 <Canvas>
-        <PerspectiveCamera makeDefault ref={cameraRef} position={[350, 50, 0]} />
+        <PerspectiveCamera makeDefault ref={cameraRef} position={[1, 1, 2]} />
         <ambientLight intensity={5} />
         <Suspense fallback={null}>
           <pointLight position={[35, 35, 0]} intensity={0.4}/>
@@ -97,9 +99,9 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           <RotatingModel 
               rotationSpeed={0.005}   // Velocidad de rotación
               rotationAxis="y"        // Eje de rotación
-              rotationPoint={new Vector3(200, -10, 10.25)} // Punto de rotación
+              rotationPoint={new Vector3(0, 0, 0)} // Punto de rotación
           >
-            <Mecanica />
+            <Toolbox />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
