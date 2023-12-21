@@ -48,7 +48,7 @@ const resources: Resource = {
 
       servicesData: {
         'PRE ITV': {
-          title: 'PRE ITV',
+          title: 'PRE MOV',
           txt: 'Do you have an appointment with the ITV or is it about to expire? At A Punto Motor, we ensure that your car passes the vehicle technical inspection without any problems. With our PRE-ITV service, we thoroughly inspect your vehicle to avoid any setbacks.',
         },
         'ELECTRICIDAD DEL AUTOMOVIL': {
@@ -174,7 +174,7 @@ const resources: Resource = {
 
       servicesData: {
         'PRE ITV': {
-          title: 'PRE MOV',
+          title: 'PRE ITV',
           txt: '¿Tiene cita con la ITV o está a punto de caducar? En A Punto Motor nos encargamos de que su coche pase sin problemas la inspección técnica de vehículos, con nuestro servicio de PRE-ITV inspeccionamos a fondo su vehículo para evitar los contratiempos.',
         },
         'ELECTRICIDAD DEL AUTOMOVIL': {

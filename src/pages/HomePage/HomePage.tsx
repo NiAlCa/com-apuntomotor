@@ -11,6 +11,7 @@ import image2 from "../../assets/imagenes/4.jpg";
 import { ContenedorPage } from "../../components/Contenedor/Contenedor";
 
 export const HomePage = () => {
+ 
   return (
     <>
       <Navbar />

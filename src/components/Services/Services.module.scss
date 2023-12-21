@@ -10,12 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+   
 }
 
 .gridItem {
     text-align: center;
     align-items: center;
-    margin-bottom: 10px;
     height: 300px;
     width: 500px;
     display: flex;
@@ -35,6 +36,7 @@
 
     p {
         font-size: 14px;
+       
     }
 }
 
@@ -75,26 +77,34 @@
     }
 
 }
-@media screen and (min-width: 1201px) {
-    .grid-item{
-      flex-basis: 100%; 
+
+  @media screen and (max-width: 1024px) {
+    .row {
+      flex-direction: column;
     }
   }
-  
   
   @media screen and (max-width: 1200px) {
     .grid-item{
       flex-basis: 100%; 
+
     }
   }
   @media screen and (max-width: 767px) {
     .col {
       text-align: center;
     }
+    
   
     .grid-item {
       max-width: 80%; 
       margin: 0 auto; 
+    
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .servicesparagraph {
+      width: 360px;
     }
   }
 

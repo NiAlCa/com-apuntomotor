@@ -25,18 +25,18 @@ const Services = () => {
         <div className={`row ${styles.row} text-white`}>
 
           {/* Izquierda */}
-          <div className={`col d-flex flex-column align-items-center   ${styles.column}`}>
+          <div className={`col d-flex flex-column align-items-center align-self-center  ${styles.column}`}>
             <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[1].img} alt={servicesData[1].title} />
               <h3>{t(`servicesData.${'ELECTRICIDAD DEL AUTOMOVIL'}.title`)}</h3>
-              <p>{t(`servicesData.${'ELECTRICIDAD DEL AUTOMOVIL'}.txt`)}</p>
+              <p className={styles.servicesparagraph}>{t(`servicesData.${'ELECTRICIDAD DEL AUTOMOVIL'}.txt`)}</p>
             </div>
             <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[3].img} alt={servicesData[3].title} />
               <h3>{t(`servicesData.${'CAMBIO DE NEUMATICOS'}.title`)}</h3>
-              <p>{t(`servicesData.${'CAMBIO DE NEUMATICOS'}.txt`)}</p>
+              <p className={styles.servicesparagraph}>{t(`servicesData.${'CAMBIO DE NEUMATICOS'}.txt`)}</p>
             </div>
             <div className={`grid-item ${styles.gridItemc}`}></div>
           </div>
@@ -62,23 +62,23 @@ const Services = () => {
           </div>
 
           {/* Derecha */}
-          <div className={`col  d-flex flex-column align-items-center   ${styles.column}`}>
+          <div className={`col  d-flex flex-column align-items-center  ${styles.column}`}>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[0].img} alt={servicesData[0].title} />
               <h3>{t(`servicesData.${'PRE ITV'}.title`)}</h3>
-              <p>{t(`servicesData.${'PRE ITV'}.txt`)}</p>
+              <p className={styles.servicesparagraph}>{t(`servicesData.${'PRE ITV'}.txt`)}</p>
             </div>
             <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[2].img} alt={servicesData[2].title} />
               <h3>{t(`servicesData.${'DIANOSTICO MULTIMARCA'}.title`)}</h3>
-              <p>{t(`servicesData.${'DIANOSTICO MULTIMARCA'}.txt`)}</p>
+              <p className={styles.servicesparagraph}>{t(`servicesData.${'DIANOSTICO MULTIMARCA'}.txt`)}</p>
             </div>
             <div className={`grid-item ${styles.gridItemc}`}></div>
             <div className={`grid-item ${styles.gridItem}`}>
               <img src={servicesData[4].img} alt={servicesData[4].title} />
               <h3>{t(`servicesData.${'CARGA DE AIRE ACONDICIONADO'}.title`)}</h3>
-              <p>{t(`servicesData.${'CARGA DE AIRE ACONDICIONADO'}.txt`)}</p>
+              <p className={styles.servicesparagraph}>{t(`servicesData.${'CARGA DE AIRE ACONDICIONADO'}.txt`)}</p>
             </div>
           </div>
         </div>
