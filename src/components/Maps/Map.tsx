@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Map = () => {
   const { t } = useTranslation();
   return (
-    <div className='container-contacto'>
+    <div className='container-contacto animate__animated animate__jackInTheBox '>
       <div>
         <h1 className='text-secondary text-center'>{t('servi.visit')}</h1>
         <div className='contacto'>
@@ -26,7 +26,7 @@ const Map = () => {
       </div>
 
       <iframe
-        className='mapa'
+        className='mapa '
         title="Google Maps"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12319.564088055995!2d-0.7142727!3d39.4717906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60fa62928af131%3A0xe25cdfcf6de0ec37!2sAPUNTOMOTOR!5e0!3m2!1ses!2ses!4v1702545255360!5m2!1ses!2ses"
         width="600"

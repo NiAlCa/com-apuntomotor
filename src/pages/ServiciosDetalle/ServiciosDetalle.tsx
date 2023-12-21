@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { serviciosPageData, serviciosPageDataItem } from '../../data/serviciosPageData.mock';
 import Modelo3d from '../../components/ServiciosDescription/Modelo3d';
 import Menu from '../../components/Menu/Menu';
-import logo from '../../assets/Logo2.png';
+import logo from '../../assets/Logo2.webp';
 
 export const ServiciosDetalle = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
@@ -36,7 +36,7 @@ export const ServiciosDetalle = () => {
             </button>
           </div>
         </div>
-        <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 ">
+        <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 animate__animated animate__zoomInRight">
         <a
           href="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none "

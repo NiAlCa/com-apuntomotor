@@ -130,7 +130,7 @@ const resources: Resource = {
 
   es: {
     translation: {
-      services: 'SERVICIOS',
+      services: 'Servicios',
       tires: 'Neumáticos y Sistema de Frenado',
       airConditioning: 'Aire Acondicionado',
       mechanics: 'Mecánica General',

@@ -6,7 +6,7 @@ interface FormProps {}
 const Form: React.FC<FormProps> = () => {
   const { t } = useTranslation();
   return (
-    <div className="d-flex justify-content-center mt-4 mb-4">
+    <div className="d-flex justify-content-center mt-4 mb-4 animate__animated animate__zoomInUp">
       <div className="col-md-6 templatemo_contactform  w-75 ">
         <div className="d-flex justify-content-around align-items-center mb-5">
           <div className="divider" />
