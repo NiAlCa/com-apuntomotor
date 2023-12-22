@@ -12,7 +12,7 @@ export const Servicios = () => {
       <I18nextProvider i18n={i18n}>
         <div className="row  justify-content-center flex-md-row flex-column-reverse">
           {/* Contenedor de las tarjetas y el botón */}
-          <div className="col-md-8 ">
+          <div className="col-md-8 col-12 px-5 ">
             <div className="page align-items-center flex-column d-flex justify-content-center">
               <div className="col align-items-center flex-column d-flex justify-content-center w-100">
                 {serviciosData.map((servicio, index) => (
@@ -40,17 +40,15 @@ export const Servicios = () => {
           </div>
           
           {/* Contenedor del menú */}
-          <div className="col-md-4 d-flex  justify-content-center">
-            <div className="col-md-12 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column mt-8  justify-content-md-start justify-content-between px-5 px-sm-5 animate__animated animate__zoomInRight">
+      
+            <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 animate__animated animate__zoomInRight">
               <a
                 href="/"
-                className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none "
-              >
+                className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ">
                 <img src={logo} alt="Logo Apuntomotor" style={{ maxWidth: '200px' }} />
               </a>
               <Menu column={true} />
             </div>
-          </div>
         </div>
       </I18nextProvider>
     </>
