@@ -2,12 +2,18 @@ import Form from "../../components/Form/Form";
 import Map from "../../components/Maps/Map";
 import logo from "../../assets/Logo2.webp";
 import Menu from "../../components/Menu/Menu";
+import Modelo3d from "../../components/ServiciosDescription/Modelo3d";
 
 export const Contacto = () => {
+
+  const icono = "visitanos"; 
+
+
   return (
     <div className="row justify-content-center flex-md-row flex-column-reverse ">
+      
       <div className="col-md-8 col-12 px-5 mt-5 mb-5  ">
-
+      <Modelo3d icono={icono} />
         <Map />
         <br></br>
         <br></br>
