@@ -1,20 +1,27 @@
 import React, { Suspense, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Loader, OrbitControls, PerspectiveCamera } from '@react-three/drei';
-import {Car} from "../../assets/3d/Car"
+
 import { Vector3 } from 'three';
 
 import RotatingModel from './RotatingModel'; 
-import { Rueda } from '../../assets/3d/Rueda';
+
 
 
 import { Luces } from '../../assets/3d/Luces';
-import { Carkey } from '../../assets/3d/Carkey';
-import { CarPlate } from '../../assets/3d/CarPlate';
-import { Carbatery } from '../../assets/3d/Carbatery';
-import { Itv } from '../../assets/3d/Itv';
-import { Toolbox } from '../../assets/3d/Toolbox';
-import { Aire } from '../../assets/3d/Aire';
+
+
+
+
+import { AireInternal } from '../../assets/3d/Aire';
+import { CarInternal } from '../../assets/3d/Car';
+import { CarbateryInternal } from '../../assets/3d/Carbatery';
+import { CarkeyInternal } from '../../assets/3d/Carkey';
+import { CarPlateInternal } from '../../assets/3d/CarPlate';
+import { ItvInternal } from '../../assets/3d/Itv';
+import { RuedaInternal } from '../../assets/3d/Rueda';
+import { ToolboxInternal } from '../../assets/3d/Toolbox';
+
 
 
 type Modelo3dProps = {
@@ -48,7 +55,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
      rotationPoint={new Vector3(5, 0, 20.25)} // Punto de rotación
     
     >
-      <Rueda />
+      <RuedaInternal />
     </RotatingModel>
   </Suspense>
   <OrbitControls />
@@ -74,7 +81,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
           rotationAxis="y"        // Eje de rotación
           rotationPoint={new Vector3(0, 0, 0)} // Punto de rotación
           >
-            <Aire />
+            <AireInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -101,7 +108,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
               rotationAxis="y"        // Eje de rotación
               rotationPoint={new Vector3(0, 0, 0)} // Punto de rotación
           >
-            <Toolbox />
+            <ToolboxInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -147,7 +154,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         <Suspense fallback={null}>
       
           <RotatingModel>
-            <Carkey />
+            <CarkeyInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -172,7 +179,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         <Suspense fallback={null}>
       
           <RotatingModel>
-            <CarPlate />
+            <CarPlateInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -202,7 +209,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         <pointLight position={[35, 35, 0]} intensity={0.4} />
         <pointLight position={[-35, 35, 0]} intensity={0.4} />
         <RotatingModel>
-          <Car />
+          <CarInternal />
         </RotatingModel>
       </Suspense>
       <OrbitControls />
@@ -226,7 +233,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         <Suspense fallback={null}>
       
           <RotatingModel>
-            <Carbatery />
+            <CarbateryInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />
@@ -247,7 +254,7 @@ export const Modelo3d: React.FC<Modelo3dProps> = ({icono}) => {
         <Suspense fallback={null}>
       
           <RotatingModel>
-            <Itv />
+            <ItvInternal />
           </RotatingModel>
         </Suspense>
         <OrbitControls />

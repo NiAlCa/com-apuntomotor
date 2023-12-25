@@ -77,7 +77,7 @@ const resources: Resource = {
 
       servi: {
         top: 'OUR SERVICES',
-        bottom: 'DISCOVER ALL OUR SERVICES',
+        bottom: 'CONTACT US FOR MORE INFORMATION',
         card: 'OTHER SERVICES',
         resena: 'REVIEWS FROM OUR CUSTOMERS',
         visit: 'VISIT UT',
@@ -204,7 +204,7 @@ const resources: Resource = {
 
       servi: {
         top: 'NUESTROS SERVICIOS',
-        bottom: 'DESCUBRE TODOS NUESTROS SERVICIOS',
+        bottom: 'CONTACTA CON NOSOTROS PARA MÁS INFORMACIÓN',
         card: 'OTROS SERVICIOS',
         resena: 'REVIEWS FROM OUR CUSTOMERS',
         visit: 'VISITANOS',

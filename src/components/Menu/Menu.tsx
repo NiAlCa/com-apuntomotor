@@ -18,7 +18,7 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-md px-5${column ? 'flex-column' : ''}`}>
+    <nav className={`navbar navbar-expand-md mr-5 px-5${column ? 'flex-column' : ''}`}>
       <button className="navbar-toggler" type="button" onClick={toggle} aria-expanded={isOpen ? 'true' : 'false'} aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

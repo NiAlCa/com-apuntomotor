@@ -4,6 +4,7 @@ import styles from './Services.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useTranslation } from 'react-i18next';
 import { I18nextProvider } from 'react-i18next'
+import { Link } from "react-router-dom";
 const Services = () => {
   const { t, i18n } = useTranslation();
 
@@ -84,8 +85,10 @@ const Services = () => {
         </div>
       </div>
 
-      <div className={`cboton ${styles.cboton}`} >
+      <div className={`cboton mb-5 ${styles.cboton}`} >
+      <Link to="/contacto">
         <button className={`boton ${styles.boton}`}>{t('servi.bottom')}</button>
+        </Link>
 
       </div>
       </I18nextProvider>

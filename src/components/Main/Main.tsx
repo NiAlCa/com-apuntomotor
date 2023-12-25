@@ -27,23 +27,25 @@ export const Main = () => {
         </Row>
         <Row className="justify-content-around align-items-end button-row">
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
-          <Link to="/contacto">
-            <button
-              type="button"
-              className="w-100 animate__animated boton animate__fadeInLeft btn btn-primary"
-             
-            >
-              {t('main.button1')}
-            </button>
+            <Link to="/contacto">
+              <button
+                type="button"
+                className="w-100 animate__animated boton animate__fadeInLeft btn btn-primary"
+
+              >
+                {t('main.button1')}
+              </button>
             </Link>
           </Col>
           <Col xs={12} sm={6} md={4} lg={2} className="mb-5">
+          <Link to="/servicios">
             <button
               type="button"
               className="w-100 animate__animated animate__fadeInRight boton btn-primary"
             >
               {t('main.button2')}
             </button>
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -1,0 +1,119 @@
+.servicio-card {
+  display: flex;
+  padding: 10px 30px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 20px;
+    color: red;
+  }
+
+  p {
+    color: rgb(100, 100, 100);
+    font-size: 12px;
+  }
+
+  .servicio-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .img-title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+  }
+
+  
+  &.right-animation {
+    order: 1; 
+    animation: zoomInRight 0.8s ease; 
+  }
+
+  &.left-animation {
+    order: 2; 
+    animation: zoomInLeft 0.8s ease; 
+  }
+
+  
+  &:nth-child(odd) {
+    flex-direction: row;
+
+    .text-service {
+      align-items: center;
+    }
+  }
+
+ 
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .text-service {
+      align-items: center;
+    }
+  }
+}
+
+.boton-ser {
+  margin-top: 20px; 
+  text-align: center;
+  background-color: rgba(1, 8, 213, 0.915);
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 3%;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  box-shadow: 0 4px 6px rgba(34, 50, 137, 0.6);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.boton-ser:hover{
+  background-color: rgba(255, 17, 0, 0.861);
+  color: black;
+  box-shadow: 0 6px 8px rgba(255, 0, 0, 0.8);
+}
+
+.boton-servicioc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 380px) {
+  .servicio-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; // Ocupa todo el ancho
+    margin-bottom: 20px; // Ajusta según sea necesario
+   
+  }
+}
