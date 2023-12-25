@@ -6,7 +6,7 @@ import Menu from '../../components/Menu/Menu';
 import logo from '../../assets/Logo2.webp';
 
 export const Servicios = () => {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
   return (
     <>
       <I18nextProvider i18n={i18n}>
@@ -33,9 +33,8 @@ export const Servicios = () => {
                   </div>
                 ))}
               </div>
-                <div className="boton-servicio">
-                  <button className="boton-ser">{t('servi.bottom')}</button>
-                </div>
+              
+                
             </div>
           </div>
           
