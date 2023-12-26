@@ -104,10 +104,14 @@
   }
   @media screen and (max-width: 390px) {
     .servicesparagraph {
-      width: 360px;
+      width: 315px;
     }
   }
-
+  @media screen and (max-width: 310px) {
+    .servicesparagraph {
+      width: 280px;
+    }
+  }
 .cboton {
     display: flex;
     justify-content: center;
