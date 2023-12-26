@@ -31,7 +31,7 @@ export const ServiciosDetalle = () => {
           <Link to="/contacto">
             <button
               type="button"
-              className="btn btn-primary animate__animated animate__fadeInLeft w-50 mb-2"
+              className="btn btn-primary animate__animated animate__fadeInLeft w-100 mb-2"
             >
               {t('contactUs')}
             </button>

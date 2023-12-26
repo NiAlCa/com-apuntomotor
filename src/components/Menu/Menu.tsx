@@ -24,19 +24,20 @@ const Menu: React.FC<MenuProps> = ({ column }) => {
       </button>
       <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
       <ul className={`navbar-nav align-items-center ${column ? 'flex-column align-items-center' : 'mr-auto'}`}>
+        
       <li className='nav-item d-flex align-items-center hiddenHamburguer d-display d-sm-none'>
             <p  onClick={toggle} >x</p>
+          </li>
+          <li className='nav-item d-flex align-items-start'>
+            <a className='nav-link p-0' href="#">
+              <ServiciosMenu />
+            </a>
           </li>
           <li className='nav-item d-flex align-items-center'>
             <a className='nav-link' href="/">{t('inicio')}</a>
           </li>
           <li className='nav-item d-flex align-items-center'>
             <a className='nav-link' href="/contacto">{t('contacto')}</a>
-          </li>
-          <li className='nav-item d-flex align-items-start'>
-            <a className='nav-link p-0' href="#">
-              <ServiciosMenu />
-            </a>
           </li>
           <li className='nav-item d-flex align-items-center'>
             <LanguageSwitcher />

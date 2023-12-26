@@ -27,7 +27,7 @@ export const ServiciosMenu: React.FC<ServiciosMenuProps> = () => {
       >
         {t('services')}
       </button>
-      <div className={`dropdown-menu ${dropdown ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
+      <div className={`dropdown-menu mx-5 ${dropdown ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
         <a className="dropdown-item" onClick={() => navigateTo('/neumaticos')}>
           {t('tires')}
         </a>
