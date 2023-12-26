@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { serviciosPageData, serviciosPageDataItem } from '../../data/serviciosPageData.mock';
 import Modelo3d from '../../components/ServiciosDescription/Modelo3d';
 import Menu from '../../components/Menu/Menu';
@@ -28,12 +28,14 @@ export const ServiciosDetalle = () => {
           <h1 className="text-center text-color-primary text-secondary">{titleToShow}</h1>
           <div>{textToShow}</div>
           <div className="d-flex justify-content-center">
+          <Link to="/contacto">
             <button
               type="button"
               className="btn btn-primary animate__animated animate__fadeInLeft w-50 mb-2"
             >
               {t('contactUs')}
             </button>
+            </Link>
           </div>
         </div>
         <div className="col-xl-2 col-sm-4 menuServicios d-flex flex-sm-row flex-md-column col-12  justify-content-md-start justify-content-between px-5 px-sm-5 animate__animated animate__zoomInRight">
