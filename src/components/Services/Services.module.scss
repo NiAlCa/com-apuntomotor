@@ -105,6 +105,7 @@
   @media screen and (max-width: 550px) {
     .gridItem{
       width: 300px;
+      height: auto;
     }
     .servicesparagraph {
       width: 315px;
@@ -113,17 +114,20 @@
   @media screen and (max-width: 390px) {
     .gridItem{
       width: 300px;
+      height: auto;
     }
     .servicesparagraph {
       width: 315px;
     }
   }
   @media screen and (max-width: 310px) {
+    
     .gridItem{
-      width: 280px;
+      width: 270px;
+      height: auto;
     }
     .servicesparagraph {
-      width: 280px;
+      width: 270px;
     }
   }
 .cboton {
