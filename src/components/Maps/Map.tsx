@@ -17,7 +17,7 @@ const Map = () => {
         </div>
         <div className='contacto'>
             <img src={mail} alt="mail" />
-            <p>apuntomotor@outlook.com </p>
+            <p>apuntomotor@outlook.es </p>
         </div>
         <div className='contacto'>
             <img src={phone} alt="phone" />
