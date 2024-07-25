@@ -11,7 +11,7 @@ export const servicesData: ServicesData = [
     {
         img: "/src/assets/services/coche-150x150.webp",
         title: "PRE ITV",
-        txt:"¿Tiene cita con la ITV o esta a punto de caducar? En A Punto Motor nos encargamos de que su coche pase sin problemas la inspección técnica de vehículos, con nuestro servicio de PRE-ITV inspeccionamos a fondo su vehiculo para evitar los contratiempos ",
+        txt:"¿Tiene una cita para la ITV o su vehículo está a punto de caducar? Nuestro servicio de PRE-ITV realiza una inspección exhaustiva de su vehículo, asegurando que todo esté en perfecto estado para evitar cualquier contratiempo.",
         position: "der"
     },
     {

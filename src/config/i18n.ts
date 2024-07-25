@@ -112,7 +112,7 @@ const resources: Resource = {
         },
         contacto: {
           title: 'CONTACT US',
-          text: 'Mail: APUNTOCOMOTORZ@OUTLOOK.ES',
+          text: 'Mail: APUNTOMOTORZ@OUTLOOK.ES',
           telefono: ' Teléfono: +34 963 013 809 ',
           movil: 'Móvil: +34 660 328 329',
         },
@@ -175,7 +175,7 @@ const resources: Resource = {
       servicesData: {
         'PRE ITV': {
           title: 'PRE ITV',
-          txt: '¿Tiene cita con la ITV o está a punto de caducar? En A Punto Motor nos encargamos de que su coche pase sin problemas la inspección técnica de vehículos, con nuestro servicio de PRE-ITV inspeccionamos a fondo su vehículo para evitar los contratiempos.',
+          txt: '¿Tiene una cita para la ITV o su vehículo está a punto de caducar? Nuestro servicio de PRE-ITV realiza una inspección exhaustiva de su vehículo, asegurando que todo esté en perfecto estado para evitar cualquier contratiempo.',
         },
         'ELECTRICIDAD DEL AUTOMOVIL': {
           title: 'SERVICIOS ELÉCTRICOS',
@@ -242,7 +242,7 @@ const resources: Resource = {
         },
         contacto: {
           title: 'CONTACTO CON NOSOTROS',
-          text: 'Mail: APUNTOCOMOTORZ@OUTLOOK.ES',
+          text: 'Mail: APUNTOMOTORZ@OUTLOOK.ES',
           telefono: ' Teléfono: +34 963 013 809 ',
           movil: 'Móvil: +34 660 328 329',
         },
